@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fractie Franssen</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <title>Fractie Franssen - Gulpen-Wittem 2026</title>
+    <meta name="description" content="Fractie Franssen zet zich in voor leefbare dorpen, cultuur en tradities in Gulpen-Wittem. Verkiezingen 18 maart 2026.">
+
+    <!-- Preconnect voor snellere Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts asynchroon laden om render-blocking te voorkomen -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap">
+    </noscript>
+
+    <!-- CSS bestanden -->
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/navigation.css">
@@ -15,6 +28,43 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/piet.css">
+
+    <style>
+        /* Fade-in animatie uitgeschakeld: alle elementen altijd zichtbaar */
+        .fade-in {
+            opacity: 1 !important;
+            transform: none !important;
+            transition: none !important;
+        }
+
+        /* Knop hover stijlen via CSS (vervangt onmouseover JS) */
+        .programma-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(196, 155, 99, 0.3);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .programma-btn:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        @media (max-width: 480px) {
+            .programma-btn {
+                font-size: 0.9rem;
+                padding: 0.9rem 1.25rem;
+                gap: 0.5rem;
+                text-align: left;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header sectie -->
@@ -27,11 +77,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="assets/Logo Black FF.png" alt="FF Logo" class="ff-logo">
+                <img src="assets/Logo Black FF.png" alt="Fractie Franssen logo" class="ff-logo" width="120" height="60" fetchpriority="high">
             </div>
-            <ul class="nav-links" id="nav-links">
-                
-            </ul>
+            <ul class="nav-links" id="nav-links"></ul>
         </div>
     </nav>
 
@@ -49,113 +97,150 @@
                     <div class="cta-group">
                         <a href="#standpunten" class="btn btn-primary" id="btn-primary">
                             <span></span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                         </a>
                         <a href="#kandidaten" class="btn btn-secondary" id="btn-secondary"></a>
                     </div>
                 </div>
-                
+
                 <div class="hero-image">
-                    <img src="assets/FractieFranssenPoster01.png" alt="Hero afbeelding">
+                    <img
+                        src="assets/FractieFranssenPoster01.png"
+                        alt="Fractie Franssen verkiezingsposter 2026"
+                        width="600"
+                        height="600"
+                        fetchpriority="high"
+                    >
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Resultaten sectie -->
     <section id="resultaten" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white;">
-        <div class="section-header fade-in" style="color: white;">
+        <div class="section-header" style="color: white;">
             <div class="section-label" style="color: var(--accent);" id="resultaten-label"></div>
             <h2 style="color: white;" id="resultaten-title"></h2>
             <p style="color: rgba(255, 255, 255, 0.85);" id="resultaten-description"></p>
         </div>
 
         <div style="max-width: 1400px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;" id="achievements-grid">
-                
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;" id="achievements-grid"></div>
+
+            <div class="stats-showcase" style="background: rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 3rem; margin-top: 3rem; border: 1px solid rgba(255, 215, 0, 0.3);">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; text-align: center; margin-bottom: 3rem; color: var(--accent);" id="stats-title"></h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;" id="stats-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standpunten sectie -->
+    <section id="standpunten">
+        <div class="section-header">
+            <div class="section-label" id="standpunten-label"></div>
+            <h2 id="standpunten-title"></h2>
+            <p id="standpunten-description"></p>
+        </div>
+
+        <div class="standpunten-grid" id="standpunten-grid"></div>
+
+        <!-- Verkiezingsprogramma knoppen -->
+        <div style="text-align: center; margin-top: 3rem; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+            <a
+                id="verkiezingsprogramma-link"
+                href="https://indd.adobe.com/view/5ef632cb-1006-43ab-8b62-e91d450a170d"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="programma-btn"
+            >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Klik hier voor het volledige verkiezingsprogramma te bekijken
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+            <a
+                href="assets/Partijprogramma26kl.pdf"
+                download="Partijprogramma Fractie Franssen 2026.pdf"
+                class="programma-btn"
+            >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Klik hier om het verkiezingsprogramma te downloaden als PDF
+            </a>
+        </div>
+    </section>
+
+    <!-- Piet sectie -->
+    <section id="over-piet">
+        <div class="section-header">
+            <div class="section-label" id="piet-label"></div>
+            <h2 id="piet-title"></h2>
+            <p id="piet-description"></p>
+        </div>
+
+        <div class="piet-container">
+            <div class="piet-hero">
+                <div class="piet-photo-frame">
+                    <img
+                        src="assets/piet-persoonlijk.jpeg"
+                        alt="Piet Franssen, lijsttrekker Fractie Franssen"
+                        class="piet-foto"
+                        width="450"
+                        height="500"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="piet-intro">
+                    <h3 id="piet-intro-title"></h3>
+                    <div id="piet-intro-paragraphs"></div>
+                    <h4 id="piet-contact-label"></h4>
+                    <div class="piet-contact">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <a href="tel:0652763732" id="piet-phone"></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="stats-showcase fade-in" style="background: rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 3rem; margin-top: 3rem; border: 1px solid rgba(255, 215, 0, 0.3);">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; text-align: center; margin-bottom: 3rem; color: var(--accent);" id="stats-title"></h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;" id="stats-grid">
-                    
+            <div class="piet-story" id="piet-stories"></div>
+
+            <div class="piet-vision">
+                <div class="piet-vision-content">
+                    <h4 id="piet-vision-title"></h4>
+                    <div id="piet-vision-paragraphs"></div>
+                    <div class="signature" id="piet-signature"></div>
                 </div>
             </div>
         </div>
     </section>
 
-   <!-- Hei stjunt ver vur sectie -->
-<section id="standpunten">
-    <div class="section-header fade-in">
-        <div class="section-label" id="standpunten-label"></div>
-        <h2 id="standpunten-title"></h2>
-        <p id="standpunten-description"></p>
-    </div>
-
-    <div class="standpunten-grid" id="standpunten-grid">
-       
-</section>
-
-<!-- Piet sectie -->
-<section id="over-piet">
-    <div class="section-header fade-in">
-        <div class="section-label" id="piet-label"></div>
-        <h2 id="piet-title"></h2>
-        <p id="piet-description"></p>
-    </div>
-
-    <div class="piet-container">
-        
-        <div class="piet-hero fade-in">
-            <div class="piet-photo-frame">
-                <img src="assets/piet-persoonlijk.jpeg" alt="Piet Franssen" class="piet-foto">
-            </div>
-            <div class="piet-intro">
-                <h3 id="piet-intro-title"></h3>
-                <div id="piet-intro-paragraphs"></div>
-                <h4 id="piet-contact-label"></h4>
-                <div class="piet-contact">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                    <a href="tel:0652763732" id="piet-phone"></a>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="piet-story" id="piet-stories">
-            
-        </div>
-
-        <!-- Visie piet -->
-        <div class="piet-vision fade-in">
-            <div class="piet-vision-content">
-                <h4 id="piet-vision-title"></h4>
-                <div id="piet-vision-paragraphs"></div>
-                <div class="signature" id="piet-signature"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    
     <div id="modals-container"></div>
 
-<!-- Kandidaten -->
-
+    <!-- Kandidaten sectie -->
     <section id="kandidaten">
-        <div class="section-header fade-in">
+        <div class="section-header">
             <div class="section-label" id="kandidaten-label"></div>
             <h2 id="kandidaten-title"></h2>
             <p id="kandidaten-description"></p>
             <p id="kandidaten-voorkeur" class="kandidaten-voorkeur"></p>
         </div>
-
-        <div class="kandidaten-grid" id="kandidaten-grid">
-            
-        </div>
+        <div class="kandidaten-grid" id="kandidaten-grid"></div>
     </section>
 
+    <!-- Footer -->
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-about">
@@ -165,26 +250,25 @@
             </div>
             <div class="footer-section">
                 <h4 id="footer-nav-title"></h4>
-                <ul class="footer-links" id="footer-links">
-                    
-                </ul>
+                <ul class="footer-links" id="footer-links"></ul>
             </div>
             <div class="footer-section">
                 <h4 id="footer-contact-title"></h4>
                 <ul class="footer-links">
                     <li><a href="mailto:info@fractiefranssen.nl" id="footer-email"></a></li>
-                    <li><a href="https://www.fractiefranssen.nl" target="_blank" id="footer-website"></a></li>
+                    <li><a href="https://www.fractiefranssen.nl" target="_blank" rel="noopener noreferrer" id="footer-website"></a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom" id="footer-bottom"></div>
     </footer>
 
-    <script src="js/content-loader.js"></script>
-    <script src="js/typing.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/modals.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/animations.js"></script>
+    <!-- Scripts defer: laden na HTML parsing, niet render-blocking -->
+    <script src="js/content-loader.js" defer></script>
+    <script src="js/typing.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/modals.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script src="js/animations.js" defer></script>
 </body>
 </html>
