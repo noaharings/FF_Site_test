@@ -1,0 +1,386 @@
+/* Over Piet Section */
+#over-piet {
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#over-piet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(196, 155, 99, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(196, 155, 99, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.piet-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* introductie met foto */
+.piet-hero {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: 20px;
+    padding: 4rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.piet-hero h4 {
+     color: var(--accent);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.piet-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.piet-photo-frame {
+    position: relative;
+    z-index: 1;
+}
+
+.piet-photo-frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border: 4px solid rgba(255, 215, 0, 0.3);
+}
+
+.piet-intro {
+    position: relative;
+    z-index: 1;
+}
+
+.piet-intro h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.piet-intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+.piet-intro .highlight {
+    color: var(--accent);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.piet-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 215, 0, 0.15);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.piet-contact svg {
+    stroke: var(--accent);
+}
+
+.piet-contact a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+
+
+/* Story Cards */
+.piet-story {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.story-card {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    border: 1px solid var(--border);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.story-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    border-radius: 16px 16px 0 0;
+}
+
+.story-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    border-color: var(--accent-light);
+}
+
+.story-card:hover::before {
+    transform: scaleX(1);
+}
+
+.story-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(196, 155, 99, 0.2);
+}
+
+.story-icon svg {
+    width: 35px;
+    height: 35px;
+    stroke: white;
+    fill: none;
+    stroke-width: 2;
+}
+
+.story-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.story-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.story-card strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* visie statement */
+.piet-vision {
+    background: var(--bg-light);
+    border-radius: 20px;
+    padding: 4rem;
+    text-align: center;
+    border: 2px solid var(--accent);
+    position: relative;
+    overflow: hidden;
+}
+
+.piet-vision::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+    animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.piet-vision-content {
+    position: relative;
+    z-index: 1;
+}
+
+.piet-vision h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.piet-vision p {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+}
+
+.piet-vision .signature {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--accent);
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+/* stats banner */
+.piet-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.piet-stat {
+    text-align: center;
+}
+
+.piet-stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.piet-stat-label {
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* mobiele responsiveness */
+@media (max-width: 1024px) {
+    .piet-hero {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+    .piet-photo-frame {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .piet-intro h3 {
+        font-size: 2rem;
+    }
+
+    .piet-intro p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .piet-hero {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .piet-photo-frame {
+        max-width: 300px;
+    }
+
+    .piet-intro h3 {
+        font-size: 1.8rem;
+    }
+
+    .piet-intro p {
+        font-size: 1rem;
+    }
+
+    .piet-story {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .story-card {
+        padding: 2rem;
+    }
+
+    .piet-vision {
+        padding: 2.5rem 2rem;
+    }
+
+    .piet-vision h4 {
+        font-size: 1.6rem;
+    }
+
+    .piet-vision p {
+        font-size: 1.05rem;
+    }
+
+    .piet-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .piet-hero {
+        padding: 1.5rem;
+    }
+
+    .piet-intro h3 {
+        font-size: 1.6rem;
+    }
+
+    .story-card {
+        padding: 1.5rem;
+    }
+
+    .story-card h4 {
+        font-size: 1.4rem;
+    }
+
+    .piet-vision {
+        padding: 2rem 1.5rem;
+    }
+
+    .piet-vision h4 {
+        font-size: 1.4rem;
+    }
+
+    .piet-stat-number {
+        font-size: 2.5rem;
+    }
+
+    .piet-contact {
+        flex-direction: column;
+        text-align: center;
+    }
+}
