@@ -1,0 +1,281 @@
+{
+  "navigation": {
+    "links": [
+      { "id": "home", "label": "Home" },
+      { "id": "resultaten", "label": "Resultaten" },
+      { "id": "standpunten", "label": "Standpunten" },
+      { "id": "over-piet", "label": "Lijsttrekker" },
+      { "id": "kandidaten", "label": "Kandidaten" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+  "hero": {
+    "title": "D'r vilt echt get te keeze dit joar in Gulpen-Wittem",
+    "taglineStatic": "Vur ",
+    "taglineTyped": [
+      "ons dialect",
+      "ons verenigingsleven",
+      "ons cultuur",
+      "leefbare dorpen",
+      "tradities",
+      "samen vieren"
+    ],
+    "description": "Sinds onze oprichting staan we voor duidelijke keuzes en daadkracht. We zetten ons in voor het behoud van lokale cultuur, tradities en de waarden die Gulpen-Wittem zo bijzonder maken.",
+    "buttons": {
+      "primary": "Onze visie",
+      "secondary": "Onze kandidaten"
+    }
+  },
+  "resultaten": {
+    "sectionLabel": "Onze Prestaties",
+    "title": "Dit hebben we bereikt",
+    "description": "Als coalitiepartner en met een wethouder in het college hebben we de afgelopen periode concrete resultaten behaald voor Gulpen-Wittem.",
+    "achievements": [
+      {
+        "title": "Iedere kern een accommodatie",
+        "description": "Als Fractie Franssen hebben wij altijd uitgedragen dat elke kern een accommodatie verdient. Dit houdt het verenigingsleven gaande en maakt evenementen mogelijk. Deze belofte zijn we deze periode nagekomen."
+      },
+      {
+        "title": "Reconstructie van de Wittemer Allee",
+        "description": "Al jaren is de Wittemer Allee een gevaarlijk punt, zeker ook voor fietsers. Samen met de provincie heeft onze wethouder zich hard ingezet voor een reconstructie. Hierbij houden we oog voor landschap en natuur, geven we de oude molenvijvers nieuw leven en versterken we de kern Wittem."
+      },
+      {
+        "title": "Meer subsidie voor verenigingen en evenementen",
+        "description": "De waarde van geld veranderd op dit momenht snel en daarom was onze subsidie verordening toe aan herziening. Deze periode hebben we de subsidies verhoogd en hebben we er ook voor gezorgd dat meer verenigingen hiervoor in aanmerking komen."
+      },
+      {
+        "title": "Voortzetting van het jeugdontbijt",
+        "description": "De eerste motie ingediend door Quinn namens onze partij ging over het jeugdontbijt. Deze motie is aangenomen en hierdoor ontvangen kinderen levend in armoede wekelijks een ontbijtbox, zodat ook zij niet met honger naar school hoeven."
+      }
+    ],
+    "stats": {
+      "title": "In cijfers",
+      "items": [
+        { "value": "5", "label": "Zetels in de raad" },
+        { "value": "1", "label": "Wethouder in college" },
+        { "value": "20+", "label": "Jaar actief" },
+        { "value": "100%", "label": "Inzet voor onze gemeente" }
+      ]
+    }
+  },
+  "standpunten": {
+    "sectionLabel": "Onze Prioriteiten",
+    "title": "HEI SJTUNT VER VUR!",
+    "description": "Fractie Franssen zet zich in voor het behoud en versterken van onze cultuur, tradities, gebruiken en de normen & waarden zoals deze verankerd zijn in onze dorpen en de omgeving.\n\nKlik op een onderwerp voor meer informatie over onze concrete plannen.",
+    "readMore": "Lees meer",
+    "items": [
+      {
+        "id": "woningen",
+        "title": "Woningen voor iedereen",
+        "preview": "Zonder woningen voor jongeren, gezinnen en ouderen en met huizen die leegstaan als belegging, lopen onze dorpen leeg. Zonder inwoners blijven onze kernwaarden niet overeind!",
+        "modalContent": "<p>Fractie Franssen blijft zich inzetten voor woningen voor starters, gezinnen en senioren. Ook uitbreidingen aan de dorpsrand steunen wij. Bij particuliere initiatieven – zoals een CPO, woningsplitsing of aanleunwoning – willen wij dat de gemeente meedenkt in mogelijkheden en inwoners actief ondersteunt in hun plannen.</p><h4>Onze concrete plannen</h4><ul><li><strong>Woningbouw:</strong> Nieuwe woningen voor starters en gezinnen maar zeker ook levensloopbestendige woningen voor senioren zijn absolute noodzaak. Fractie Franssen zal zich achter initiatieven blijven scharen die woningbouw mogelijk maken. Ook als deze initiatieven aan de buitenranden van de dorpen liggen. \"Een straatje erbij\" past voor ons op die manier in dat beleid. Wij steunen de ambitie om 250 woningen te bouwen voor 2030.</li><li><strong>Verbouwen/Aanbouwen:</strong> Niet alleen nieuwbouw en uitbreiding zorgt voor nieuwe woonruimtes. Initiatieven om woningen te splitsen of om een (aanleun)woning op eigen terrein te realiseren behoren tot de mogelijkheden. Fractie Franssen steunt deze initiatieven en verwacht van de gemeente een positieve grondhouding om deze doelen te bereiken.</li><li><strong>Leegstand bestrijden:</strong> Helaas staan ook in onze gemeente nog woningen leeg of liggen terreinen braak. Daar waar mogelijk wil Fractie Franssen dat gemeente zoekt naar mogelijkheden om deze panden of terreinen te verkrijgen en te ontwikkelen. Liefst samen met projectontwikkelaars of woningbouwstichtingen.</li><li><strong>Vakantiewoningen:</strong> Aan de huizenprijzen kunnen we niets veranderen en we vinden het fijn voor onze inwoners dat ze een mooie bedrag voor hun woning krijgen. Als partij verwelkomen we nieuwe inwoners in onze gemeente. We verwachten wel dat nieuwe inwoners meedoen in onze gemeenschap en zich daarvoor gaan inzetten. Dat kan natuurlijk niet als je Gulpen-Wittem ziet als een vakantiepark en je woning als vakantiehuis. Fractie Franssen zal zich inzetten voor een volkshuisvestingsplan dat rekening houdt met de onevenwichtige en schaarse woningmarkt. Zo willen wij verplichten dat in reeds bestaande woningen ook in de toekomst alleen permanent gewoond mag worden en dat deze niet als vakantiewoningen gebruikt kunnen worden.</li></ul><h4>Waarom is dit zo belangrijk?</h4><p>Fractie Franssen heeft de afgelopen jaren ingezet op voldoende geschikte woningen in Gulpen- Wittem. Zowel voor starters, gezinnen als voor senioren zijn geen serieuze stappen gezet. Maar het vertrek van jongeren uit onze gemeente blijft een gevaar.</p>"
+      },
+      {
+        "id": "verenigingen",
+        "title": "Samen vieren, samen organiseren",
+        "preview": "Tradities en gebruiken draaien om samen vieren. Helaas zijn al veel momenten verloren gegaan. Gelukkig komen er ook steeds vernieuwende initiatieven bij.",
+        "modalContent": "<p>Zoals de verenigingen bijdragen aan onze identiteit en zorgen voor samenhang, zo zijn de vaak door hen georganiseerde evenementen dé tastbare hoogtepunten waarop die samenhang en identiteit tot volle bloei komen.</p><h4>Onze concrete plannen</h4><ul><li><strong>Samen organiseren:</strong> Fractie Franssen steunt daarom het organiseren van evenementen, klein en groot. Organisatoren mogen niet het gevoel hebben dat hun evenement bij voorbaat strandt op regels en formulieren.</li></ul><h4>Onze visie:</h4><p>Het moet nog meer voelen alsof de ambtenaar je meeneemt om samen het doel te bereiken.</p>"
+      },
+      {
+        "id": "limburgs",
+        "title": "Taal is meer dan woorden",
+        "preview": "Limburgs laat zien wie we zijn en waar we vandaan komen. Het is cultuur, gemeenschap en trots.",
+        "modalContent": "<p>Limburgs is méér dan een taal, het is onlosmakelijk verbonden met onze identiteit, cultuur en samenleven in onze regio. Limburgs is geen dialect van het Nederlands. Het is een eigen taal met vele dialecten.</p><h4>Onze concrete plannen</h4><ul><li><strong>Limburgs als erkende taal:</strong> Fractie Franssen steunt dan ook onze provinciaal uitvoeringsprogramma Limburgse Taal: \"Same veur 't Limburgs\" om Limburgs te versterken en voor te bereiden op een Europese Deel-III erkenning (net als Fries of Baskisch) in 2030.</li><li><strong>Lessen in het Limburgs:</strong> Ter bevordering van het Limburgs streeft Fractie Franssen er naar om op (basis)scholen een deel van de lessen in het Limburgs te laten geven. Dit kan d.m.v. regulier lessen in het Limburgs (b.v. om de vrijdag een Limburg dag) of door het geven van lessen over Limburg in het Limburgs. Ook zijn wij voor spreken in het Limburgs op de buitenschoolse opvang en de peuterspeelzaal. De gemeente kan dit actief promoten.</li><li><strong>Leer Limburgs schrijven:</strong> Verder vinden we dat lessen in de zogenaamde Veldeke-spelling voor volwassenen en kinderen gestimuleerd en toegankelijker gemaakt moeten worden. Er ligt hiervoor een actieve rol bij de gemeente.</li><li><strong>Limburgs bij de overheid:</strong> Ook zouden we graag zien dat we bij onze gemeente en onze gemeenteraad meer in onze moedertaal kunnen spreken. Je kunt je het beste uitdrukken in de taal waarin je bent opgegroeid. Ook onze raadsleden en wethouders moeten steeds vertalen naar het Nederlands. Bij iedere vertaling gaat iets van de betekenis en emotie verloren.</li></ul><h4>Kortom:</h4><p>Fractie Franssen steunt de erkenning van het Limburgs als officiële taal en stimuleert gebruik in het onderwijs en bij overheidsinstanties.</p>"
+      },
+      {
+        "id": "verkeer",
+        "title": "Slimmer omgaan met verkeer",
+        "preview": "Dagtoeristisch verkeer zorgt in weekenden en op feestdagen voor veel overlast. Dit thema komt al jaren terug in verkiezingsprogramma's, maar uitvoering blijft achter.",
+        "modalContent": "<p>Onze infrastructuur staat onder druk, het lijkt er sterk op dat de maximale capaciteit bereikt is. Op feestdagen en weekenden is het een hele opgave om van A naar B te bewegen. Het is druk tussen de wielertoeristen, e-bikers, motor tourders, vakantieverkeer, landbouwmachines en dagjesmensen. Dit thema komt al jaren terug in verkiezingsprogramma's, maar uitvoering blijft achter.</p><h4>Onze concrete plannen</h4><ul><li><strong>Luister naar de inwoners:</strong> De meeste kennis over de lokale verkeerssituatie en bijbehorende overlast ligt bij de lokale bewoners. Wij vinden dat ideeën van bewoners serieus genomen moeten worden en van A tot Z begeleid door de ambtenaar.</li><li><strong>Slimme samenwerking:</strong> Wij willen dat Gulpen-Wittem actief de samenwerking zoekt met navigatiepartijen als Google, TomTom of Apple om verkeersstromen beter te begeleiden. Op deze manier kunnen alternatieve routes bij drukte aangegeven worden en kunnen sluiproutes vermeden worden.</li><li><strong>Inzetten wat werkt:</strong> Als een verkeersmaatregel werkt, borduur hier op voort. Zo heeft het gebruik van zogeheten smileys bewezen snelheidsremmend te zijn. Maak langdurende inzet van zo'n maatregel in de dorpen mogelijk.</li></ul><h4>Kortom:</h4><p>Fractie Franssen wil dat Gulpen-Wittem actief de samenwerking zoekt met navigatiepartijen als Google, TomTom en Apple om verkeersstromen beter te begeleiden.</p>"
+      },
+      {
+        "id": "steun",
+        "title": "Steun voor plannen",
+        "preview": "Het mag niet zo zijn dat jaarlijks geld in de pot voor zelfsturing blijft zitten terwijl burgerinitiatieven op financiële gronden afgewezen worden.",
+        "modalContent": "<p>Niemand kent het dorp beter dan haar eigen inwoners. De gemeente Gulpen-Wittem heeft zelfsturing dan ook hoog in het vaandel staan.</p><h4>Onze concrete plannen</h4><ul><li><strong>Budgetten gebruiken:</strong> In de afgelopen jaren is gebleken dat consequent veel geld in de pot blijft die bestemd is om bewoners- initiatieven te steunen. De voorwaarden om subsidie te krijgen voor een bewonersinitiatief moeten veel eenvoudiger worden. Daarmee kan het daadwerkelijke budget ook volledig aan de dorpen besteedt worden.</li><li><strong>Ondersteun de bewoners:</strong> Vaak komen initiatieven nog via verschillende \"loketten\" binnen bij de gemeente. Bewoners verzanden nog te vaak in een woud van regels, vragen en formulieren. Fractie Franssen is echter van mening dat er één contactpersoon moet zijn die vanuit de gemeente het traject samen met de initiatiefnemers doorloopt. Eén aangewezen ambtenaar die als gids door het regelwoud fungeert, ook als projecten over meerdere afdelingen lopen.</li><li><strong>Overheidsparticipatie:</strong> Een van de mogelijkheden die ook onderzocht moeten worden is de toepassing van zogenaamde overheidsparticipatie. Hierbij sluit de gemeente zich aan bij een initiatief van de inwoners. De gemeente ondersteunt zo'n project dan b.v. in de uitvoering, terwijl de regie bij de initiatiefnemer blijft.</li></ul><h4>Kortom:</h4><p>De voorwaarden voor subsidie aan burgerinitiatieven zullen eenvoudiger moeten worden.</p>"
+      },
+      {
+        "id": "cultuur",
+        "title": "De kern van het dorp",
+        "preview": "Zonder verenigingen geen dorpsleven, zonder geschikte accommodaties geen plek voor onze verenigingen.",
+        "modalContent": "<p>Onze lokale cultuur, tradities en het verenigingsleven zijn de ziel van Gulpen-Wittem. Ze verbinden mensen, geven identiteit en maken onze gemeente uniek. Het behoud en de versterking hiervan staat centraal in ons programma.</p><h4>Onze concrete plannen</h4><ul><li><strong>Structurele steun:</strong> De steun aan onze verenigingen, net als aan de accommodaties, moet vanuit de gemeente gewaarborgd blijven en daar mag niet aan getornd worden!</li><li><strong>Sport voor iedereen:</strong> Sport brengt mensen samen en houdt ons gezond. Fractie Franssen zet zich in voor betaalbare, bereikbare en toegankelijke sportvoorzieningen voor iedereen in onze gemeente.</li><li><strong>Fuseren alleen van onder op:</strong> Fractie Franssen is geen voorstander van het van bovenaf opleggen van samenwerkingen of fusies tussen verenigingen. Als verenigingen zelf het initiatief nemen tot samenwerking, moet de gemeente dat volledig ondersteunen.</li></ul><h4>Waarom is dit zo belangrijk?</h4><p>Verenigingen en de accommodaties vormen een belangrijk fundament van de samenleving. Hier mag niet aan getornd worden.</p>"
+      },
+      {
+        "id": "groen",
+        "title": "Beter groen in dorpen",
+        "preview": "Gulpen-Wittem ligt midden in het 5 sterren landschap. We kampen echter met een achterstallig groenonderhoud, waardoor genieten vaak door ergernis vervangen wordt.",
+        "modalContent": "<p>Binnen de driehoek van cultuur en erfgoed is de natuur de derde peiler die onze regio zo aantrekkelijk maakt om in te wonen en te recreëren. Ons 5 sterren heuvellandschap is uniek binnen Limburg en zeker Nederland. Meer dan twee derde van de oppervlakte van Gulpen-Wittem bestaat uit \"groen\". Ruim boven provinciale en landelijke gemiddelden horen we bij de 10 groenste gemeenten van Nederland.</p><h4>Onze concrete plannen</h4><ul><li><strong>Groenonderhoud:</strong> Een veelgehoorde ergernis bij inwoners is het achterstallig groenonderhoud. Fractie Franssen zou het liefste zien dat het groenonderhoud weer onder eigen beheer komt van de gemeentelijke groenvoorziening. Wij pleiten we ervoor om daar waar mogelijk acute situaties in overleg met betrokken inwoners door lokale groenbedrijven aan te laten pakken. Natuur is ons visitekaartje én onze leefomgeving.</li><li><strong>Boeren en natuur:</strong> Al eeuwen dragen boeren bij aan onze natuur en nu nog steeds wordt een groot deel van ons landschap door de boeren onderhouden. Het mooiste voorbeeld is het bocagelandschap: door boeren gecreëerd en onlosmakelijk verbonden met Zuid-Limburg. In Gulpen-Wittem kun je geen steen werpen zonder een Natura 2000-gebied te raken, en vrijwel overal grenzen deze aan agrarisch gebied. Daardoor worden boeren geconfronteerd met stevige beperkingen in hun bedrijfsvoering. Een agrariër is echter méér dan boer alleen: het is ook een ondernemer. Fractie Franssen vindt dat zij niet enkel beperkt mogen worden, maar ruimte moeten krijgen voor nieuwe ideeën. Niet per se via financiële compensatie, maar door mee te bewegen met plannen voor verbrede landbouw: een boerderij- winkel, een rustpunt voor wandelaars en fietsers, kleinschalige horeca of kamperen bij de boer. Zo behouden we het landschap én geven we boeren perspectief. Binnen dit perspectief moet ook de mogelijkheid tot doorgroei bespreekbaar blijven.</li></ul><h4>Kortom:</h4><p>Het groenonderhoud moet weer op peil. Een significant deel weer onder controle van de gemeentelijke dienst zelf. Met ruimte voor inspraak en participatie van de inwoners of verenigingen.</p>"
+      },
+      {
+        "id": "financien",
+        "title": "Eerlijke financiën",
+        "preview": "We zien dat sluitend begroten een steeds zwaardere opgave wordt. Daarom kiezen wij voor een financieel gezonde gemeente met eerlijke lasten.",
+        "modalContent": "<p>Een sterke gemeente begint met eerlijke en gezonde financiën, waarbij de lasten niet eenzijdig bij onze inwoners terechtkomen.</p><h4>Onze concrete plannen</h4><ul><li><strong>Verstandig, eerlijk, stabiel:</strong> Onze gemeente moet financieel gezond blijven, zonder dat inwoners telkens meer moeten betalen. Fractie Franssen staat voor een verstandig, eerlijk en stabiel financieel beleid in Gulpen-Wittem. Een beleid waarin toeristen en forenzen evenredig bijdragen aan het hoge voorzieningenniveau van onze gemeente.</li><li><strong>Geen extra lastenverhoging:</strong> Huishoudens en bedrijven verdienen duidelijkheid: geen extra lastenverzwaringen bovenop de inflatie. De belastingen, waaronder OZB, stijgen wat ons betreft niet meer dan de indexering van het CPB (Centraal PlanBureau).</li><li><strong>Realistisch bezuinigen:</strong> Komt de begroting ondanks dat niet sluitend uit? Dan kiezen wij voor realistische, meerjarige bezuinigingen — niet voor hogere belastingen. Op deze manier houden we onze gemeente financieel gezond, zonder de belastingdruk verder op te voeren.</li></ul><h4>Kortom:</h4><p>Wij kiezen voor een financieel gezonde gemeente met eerlijke lasten. Geen extra belastingdruk voor inwoners en ondernemers, wel een stabiel beleid waarin ook toeristen en forenzen bijdragen. Zo houden we voorzieningen als Mosaqua in stand en blijft Gulpen-Wittem leefbaar, betaalbaar en gastvrij.</p>"
+      }
+    ]
+  },
+  "piet": {
+    "sectionLabel": "Onze Lijsttrekker",
+    "title": "Piet Franssen - Een politiek leven",
+    "description": "Meer dan 20 jaar ervaring, een duidelijke visie en de drive om door te pakken. Leer Piet kennen en waarom hij zich nog één keer verkiesbaar stelt.",
+    "intro": {
+      "title": "Verantwoordelijkheid nemen in het bestuur",
+      "paragraphs": [
+        "Op <span class=\"highlight\">18 maart</span> bepaalt u welke koers Gulpen-Wittem de komende jaren vaart. Onze gemeente staat voor belangrijke keuzes: de omgevingsvisie, woningopgave, natuur, wateroverlast, leefbaarheid, verenigingsleven en evenementen.",
+        "Moeilijke keuzes vragen om <span class=\"highlight\">bestuurlijke stabiliteit</span> en om mensen die weten hoe besluitvorming binnen gemeente, provincie en waterschap samenhangt. Besluiten moeten niet alleen vandaag passen, maar ook over jaren nog houdbaar zijn."
+      ],
+      "contactLabel": "Piet is, zoals altijd, bereikbaar voor eenieder.",
+      "phone": "06-52763732"
+    },
+    "stories": [
+      {
+        "title": "Actie naar bestuur",
+        "text": "Eind jaren zeventig ontstonden er plannen om de hellingen van de Gulperberg te bebouwen. Piet richtte een actiegroep op om zich hiertegen te verzetten. <strong>Met succes.</strong> Maar het leverde hem ook een inzicht op: wie echt invloed wil hebben, moet niet alleen actievoeren, maar verantwoordelijkheid nemen in het bestuur."
+      },
+      {
+        "title": "Ervaring die telt",
+        "text": "Politiek werd de rode draad door zijn leven. Piet combineert jarenlange bestuurservaring met een netwerk bij provincie en waterschap. <strong>\"Ervaring helpt om de juiste weg te vinden,\"</strong> zegt hij. Die kennis is onmisbaar bij complexe dossiers waar lokale wensen, regels van provincie en rijk, en financiële kaders door elkaar lopen."
+      },
+      {
+        "title": "Tussen de mensen",
+        "text": "<strong>\"Je moet niet op afstand blijven,\"</strong> zegt Piet. \"Tussen de inwoners staan en vooral luisteren is vaak belangrijker dan de woorden die je spreekt. Een wethouder moet zichtbaar zijn en de problematiek en sociale samenhang aanvoelen. Dat kan alleen als je zelf uit de gemeente komt.\""
+      }
+    ],
+    "vision": {
+      "title": "Waarom nog één keer?",
+      "paragraphs": [
+        "Er staan beslissende keuzes voor de deur. De vast te stellen omgevingsvisie zal richtinggevend zijn voor hoe Gulpen-Wittem zich ontwikkelt. <strong>Juist die balans vraagt ervaring.</strong>",
+        "\"Dat heeft mij opnieuw de drive gegeven om dit traject nu goed en zorgvuldig af te ronden. Tegelijkertijd staat er een nieuwe generatie klaar. Mijn rol is nu ook kennis, ervaring en netwerk overdragen.\"",
+        "Onze dorpen mogen geen openluchtmuseum worden waar mensen komen genieten van de rust en stilte, terwijl het echte dorpsleven langzaam verdwijnt. <strong style=\"color: var(--primary);\">Fractie Franssen kiest voor levendige dorpen.</strong>"
+      ],
+      "signature": "— Piet Franssen"
+    }
+  },
+  "kandidaten": {
+    "sectionLabel": "Ons Team",
+    "title": "Kandidaten 2026",
+    "description": "Ervaren en gedreven mensen met een hart voor Gulpen-Wittem. Samen staan we voor duidelijke keuzes en daadkrachtig bestuur.",
+    "voorkeursstemmenIntro": "<strong>Fractie Franssen gelooft in de kracht van de voorkeursstem.</strong> U kiest niet alleen voor onze visie, maar voor de persoon die u vertrouwt. <strong>Iedere kandidaat staat er om uw stem te verdienen.</strong>",
+    "list": [
+      {
+        "name": "Piet Franssen",
+        "role": "Lijsttrekker & Wethouder",
+        "description": "Met jarenlange ervaring in het gemeentebestuur zet Piet Franssen zich opnieuw in als lijsttrekker van Fractie Franssen. Met rust en duidelijke koers werkt hij aan sterke, leefbare dorpen in Gulpen-Wittem.",
+        "image": "assets/01 lijstvakje.jpg"
+      },
+      {
+        "name": "Diana Vluggen",
+        "role": "Raadslid",
+        "description": "Met hart voor mensen en lef voor besluiten is Diana Vluggen sinds 2022 raadslid in Gulpen-Wittem. Ze kiest voor eerlijke afwegingen, duidelijke communicatie en betrokkenheid bij wat er speelt in onze dorpen.",
+        "image": "assets/02 lijstvakje.jpg"
+      },
+      {
+        "name": "Quinn Quadvlieg",
+        "role": "Fractievoorzitter",
+        "description": "Geboren en getogen in Gulpen is Quinn Quadvlieg fractievoorzitter van Fractie Franssen. Hij staat voor bereikbaarheid, betrokkenheid en het behoud van het karakter en de kracht van Gulpen-Wittem.",
+        "image": "assets/03 lijstvakje.jpg"
+      },
+      {
+        "name": "Jo Nix",
+        "role": "Raadslid",
+        "description": "Sinds 1990 raadslid en diep geworteld in het verenigingsleven zet Jo Nix zich in voor luisterend bestuur. Hij staat voor leefbare kernen, gelijke kansen en ervaring die werkt voor Gulpen-Wittem.",
+        "image": "assets/04 lijstvakje.jpg"
+      },
+      {
+        "name": "Ralf Ramakers",
+        "role": "Raadslid",
+        "description": "Ralf Ramakers uit Mechelen is raadslid en interim-voorzitter van Fractie Franssen. Hij staat voor bereikbaarheid, nuchtere keuzes en een leefbaar Mechelen met sterke verenigingen.",
+        "image": "assets/05 lijstvakje.jpg"
+      },
+      {
+        "name": "Noël Buysen",
+        "role": "Kandidaat",
+        "description": "Noël Buijsen opgegroeid in Gulpen en wonend in Eys, zet zich in voor leefbare dorpen met ruimte voor jong en oud. Betrokken, benaderbaar en met hart voor het sociaal domein in Gulpen-Wittem.",
+        "image": "assets/06 lijstvakje.jpg"
+      },
+      {
+        "name": "Wil Schrouff",
+        "role": "Kandidaat",
+        "description": "Wil Schrouff uit Epen zet zich in voor een leefbaar dorp met aandacht voor wonen, verenigingen, landbouw en natuur. Nuchter, lokaal en met hart voor Gulpen-Wittem.",
+        "image": "assets/07 lijstvakje.jpg"
+      },
+      {
+        "name": "Max Kaelen",
+        "role": "Kandidaat",
+        "description": "Max Kaelen uit Gulpen zet zich in voor een leefbaar en toekomstgericht dorp. Met frisse energie en betrokkenheid werkt hij aan sterke kernen in Gulpen-Wittem.",
+        "image": "assets/08 lijstvakje.jpg"
+      },
+      {
+        "name": "Rob Delnoij",
+        "role": "Kandidaat",
+        "description": "Rob Delnoij, 60 jaar, zet zich in voor leefbare dorpen met aandacht voor verenigingen, cultuur, veiligheid en jongeren. Politiek dichtbij de mensen, met luisteren, verbinden en doen.",
+        "image": "assets/09 lijstvakje.jpg"
+      },
+      {
+        "name": "René Hameleers",
+        "role": "Kandidaat",
+        "description": "René Hameleers uit Wijlre is landbouwer en staat voor leefbare dorpen en buitengebied. Met nuchtere, praktische politiek zet hij zich in voor inwoners, verenigingen, landbouw en betaalbare woningen.",
+        "image": "assets/10 lijstvakje.jpg"
+      },
+      {
+        "name": "René Franssen",
+        "role": "Kandidaat",
+        "description": "René Franssen stelt zich kandidaat voor de gemeenteraad van Gulpen-Wittem. Met ervaring als Statenlid zet hij zich in voor lokale zeggenschap, leefbare dorpen, landbouw en behoud van ons karakteristieke buitengebied.",
+        "image": "assets/11 lijstvakje.jpg"
+      },
+      {
+        "name": "John Moonen",
+        "role": "Kandidaat",
+        "description": "John Moonen uit Slenaken zet zich in voor leefbare dorpen en sterke gemeenschappen. Betrokken en benaderbaar, met oog voor verenigingen, woningen en het behoud van ons landschap.",
+        "image": "assets/12 lijstvakje.jpg"
+      },
+      {
+        "name": "Fon Kistermann",
+        "role": "Raadslid",
+        "description": "Fon Kistermann uit Wijlre kiest voor nuchtere, lokale politiek met aandacht voor verenigingen, leefbaarheid en saamhorigheid in Gulpen-Wittem. Fon heeft een ruime politieke ervaring en doet politiek een stapje terug, hij blijft graag bijdragen aan onze lokale democratie.",
+        "image": "assets/13 lijstvakje.jpg"
+      },
+      {
+        "name": "Math Wenders",
+        "role": "Kandidaat",
+        "description": "Math Wenders uit Gulpen zet zich in voor sterke, leefbare dorpen waar mensen zich thuis voelen. Math is te typeren als een echte verenigingsman, daarin is hij altijd actief geweest en heeft dardoor goede voelsprieten in de samenleving.",
+        "image": "assets/14 lijstvakje.jpg"
+      },
+      {
+        "name": "Florian Hendriks",
+        "role": "Kandidaat",
+        "description": "Florian Hendriks uit Nijswiller staat voor bereikbare politiek en sterke gemeenschappen. Florian is al ruime tijd betrokken bij de Fractie Franssen en voelt zich helemaal thuis bij onze lokale focus en visie.",
+        "image": "assets/15 lijstvakje.jpg"
+      },
+      {
+        "name": "Robbert Dautzenberg",
+        "role": "Kandidaat",
+        "description": "Robbert Dautzenberg uit Mechelen staat voor een toekomstbestendig Gulpen-Wittem. Als vorige fractievoorzitter van de Fractie Franssen beschikt hij over veel kennis van onze gemeente en adviseert hij de huidige fractie geregeld.",
+        "image": "assets/16 lijstvakje.jpg"
+      },
+      {
+        "name": "Ron Gerards",
+        "role": "Kandidaat",
+        "description": "Ron Gerhards uit Euverem staat voor leefbare dorpen, duidelijke keuzes en politiek dichtbij de mensen. Met betrokkenheid en nuchtere blik zet hij zich in voor een sterk Gulpen-Wittem.",
+        "image": "assets/17 lijstvakje.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "about": {
+      "title": "Fractie Franssen",
+      "description": "Al meer dan 20 jaar actief voor Gulpen-Wittem. Politiek met een rechte rug, duidelijke keuzes en daadkracht.",
+      "electionDate": "Verkiezingen: 18 maart 2026"
+    },
+    "navigation": {
+      "title": "Navigatie"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "info@fractiefranssen.nl",
+      "website": "www.fractiefranssen.nl"
+    },
+    "copyright": "© 2026 Fractie Franssen Gulpen-Wittem. Alle rechten voorbehouden.",
+    "designer": "Designed by Harings Development."
+  }
+}
