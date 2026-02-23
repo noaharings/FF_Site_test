@@ -31,14 +31,18 @@
     <link rel="stylesheet" href="css/piet.css">
 
     <style>
-        /* Fade-in animatie uitgeschakeld: alle elementen altijd zichtbaar */
+        /* Fade-in animatie: standaard onzichtbaar, wordt zichtbaar via JS observer */
         .fade-in {
-            opacity: 1 !important;
-            transform: none !important;
-            transition: none !important;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        /* Knop hover stijlen via CSS (vervangt onmouseover JS) */
+        /* Knop hover stijlen via CSS */
         .programma-btn {
             display: inline-flex;
             align-items: center;
@@ -119,7 +123,7 @@
 
     <!-- Resultaten sectie -->
     <section id="resultaten" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white;">
-        <div class="section-header" style="color: white;">
+        <div class="section-header fade-in" style="color: white;">
             <div class="section-label" style="color: var(--accent);" id="resultaten-label"></div>
             <h2 style="color: white;" id="resultaten-title"></h2>
             <p style="color: rgba(255, 255, 255, 0.85);" id="resultaten-description"></p>
@@ -128,7 +132,7 @@
         <div style="max-width: 1400px; margin: 0 auto;">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;" id="achievements-grid"></div>
 
-            <div class="stats-showcase" style="background: rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 3rem; margin-top: 3rem; border: 1px solid rgba(255, 215, 0, 0.3);">
+            <div class="stats-showcase fade-in" style="background: rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 3rem; margin-top: 3rem; border: 1px solid rgba(255, 215, 0, 0.3);">
                 <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; text-align: center; margin-bottom: 3rem; color: var(--accent);" id="stats-title"></h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;" id="stats-grid"></div>
             </div>
@@ -137,7 +141,7 @@
 
     <!-- Standpunten sectie -->
     <section id="standpunten">
-        <div class="section-header">
+        <div class="section-header fade-in">
             <div class="section-label" id="standpunten-label"></div>
             <h2 id="standpunten-title"></h2>
             <p id="standpunten-description"></p>
@@ -185,14 +189,14 @@
 
     <!-- Piet sectie -->
     <section id="over-piet">
-        <div class="section-header">
+        <div class="section-header fade-in">
             <div class="section-label" id="piet-label"></div>
             <h2 id="piet-title"></h2>
             <p id="piet-description"></p>
         </div>
 
         <div class="piet-container">
-            <div class="piet-hero">
+            <div class="piet-hero fade-in">
                 <div class="piet-photo-frame">
                     <img
                         src="assets/piet-persoonlijk.jpeg"
@@ -218,7 +222,7 @@
 
             <div class="piet-story" id="piet-stories"></div>
 
-            <div class="piet-vision">
+            <div class="piet-vision fade-in">
                 <div class="piet-vision-content">
                     <h4 id="piet-vision-title"></h4>
                     <div id="piet-vision-paragraphs"></div>
@@ -232,7 +236,7 @@
 
     <!-- Kandidaten sectie -->
     <section id="kandidaten">
-        <div class="section-header">
+        <div class="section-header fade-in">
             <div class="section-label" id="kandidaten-label"></div>
             <h2 id="kandidaten-title"></h2>
             <p id="kandidaten-description"></p>
@@ -268,8 +272,41 @@
     <script src="js/content-loader.js" defer></script>
     <script src="js/typing.js" defer></script>
     <script src="js/navigation.js" defer></script>
-    
     <script src="js/scroll.js" defer></script>
-    <script src="js/animations.js" defer></script>
+
+    <!-- Animaties inline: geen apart bestand, geen race condition mogelijk -->
+    <script>
+        (function() {
+            // Fallback: als IntersectionObserver niet beschikbaar is, alles direct zichtbaar
+            if (!('IntersectionObserver' in window)) {
+                document.querySelectorAll('.fade-in').forEach(function(el) {
+                    el.classList.add('visible');
+                });
+                return;
+            }
+
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+            // Globale functie zodat content-loader deze ook kan aanroepen
+            window.observeFadeIns = function() {
+                document.querySelectorAll('.fade-in:not(.visible)').forEach(function(el) {
+                    observer.observe(el);
+                });
+            };
+
+            // Observeer elementen die al in de DOM staan
+            window.observeFadeIns();
+
+            // Observeer opnieuw na korte pauze voor elementen die net iets later laden
+            setTimeout(window.observeFadeIns, 200);
+        })();
+    </script>
 </body>
 </html>
